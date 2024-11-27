@@ -17,18 +17,44 @@
     <header>
         <h1>Vårt sortiment</h1>
         <a href="index.html"><img src="images/logo.svg" width="65" alt="Bageri Jönssons logotyp"></a>
-        <nav>
-            <a href="index.html">Hem</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="sortiment.html">Sortiment</a>
+
+        <nav class="nav-Meny">
+            <a href="index.html" class="menyKnappar">Hem</a>
+            <a href="kontakt.html" class="menyKnappar">Kontakt</a>
+            <a href="sortiment.html" class="menyKnappar">Sortiment</a>
         </nav>
     </header>
     <main>
+
+        <fieldset>
+            <legend>Personuppgifter</legend>
+
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Meddelande</legend>
+
+            <label for="message">Gör din beställning här:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit" class="button">Skicka</button>
+        </fieldset>
+
         <section>
             <h2>Beställ dina bakverk online!</h2>
 
             <p>Hos Bageri Jönsson kan du enkelt beställa våra nybakade bröd och bakverk online! Välj bland våra
-                klassiska favoriter eller säsongsbetonade godsaker, och få dem levererade direkt till dörren eller hämta
+                klassiska favoriter eller säsongsbetonade godsaker, och få dem levererade direkt till dörren
+                eller hämta
                 upp i butiken.</p>
 
             <p>Perfekt för helgen, festen eller en god fika!</p>
@@ -42,9 +68,12 @@
         </section>
         <h2>Bröd & Frallor</h2>
 
-        <p>Vi bakar vårt bröd med omsorg och använder endast de bästa råvarorna för att ge varje bröd en härlig smak och
-            perfekt konsistens. Välj bland klassiska vetebröd, rågbröd eller vårt specialbröd med olika spannmål och
-            frön. Alla våra bröd är bakade med tid och kärlek för att ge dig en härlig upplevelse varje gång.</p>
+        <p>Vi bakar vårt bröd med omsorg och använder endast de bästa råvarorna för att ge varje bröd en härlig
+            smak och
+            perfekt konsistens. Välj bland klassiska vetebröd, rågbröd eller vårt specialbröd med olika spannmål
+            och
+            frön. Alla våra bröd är bakade med tid och kärlek för att ge dig en härlig upplevelse varje gång.
+        </p>
 
         <h3>Surdegsbröd</h3>
         <p>Traditionellt bakat med vår egen surdeg för en rik och fyllig smak.</p>
@@ -61,7 +90,8 @@
         <img>
         <section>
             <h2>Fika & Bakverk</h2>
-            <p>Låt våra läckra bakverk göra din fika extra speciell. Våra bakverk är perfekta för både vardagsfika och
+            <p>Låt våra läckra bakverk göra din fika extra speciell. Våra bakverk är perfekta för både
+                vardagsfika och
                 festliga tillfällen.</p>
 
             <h3>Kanelbullar</h3>
@@ -78,13 +108,17 @@
     </main>
 
     <footer>
-        <nav>
-            <a href="https://www.google.se/maps"><img src="images/plats.png" alt="Plats"></a>
-            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://outlook.live.com"><img src="images/kontakt.png" alt="Kontakt"></a>
-            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+        <nav class="nav-Meny">
+            <a href="https://www.google.se/maps" target="_blank"><img src="images/plats.png" width="65" alt="Plats"></a>
+
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" width="65" alt="Facebook"></a>
+
+            <a href="https://outlook.live.com" target="_blank"><img src="images/kontakt.png" width="65" alt="Kontakt"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" width="65" alt="Instagram"></a>
+            
         </nav>
-            <a href="index.html"><img src="images/logo.svg" width="65" alt="Bageri Jönssons logotyp"></a>
+        <a href="index.html"><img src="images/logo.svg" width="65" alt="Bageri Jönssons logotyp"></a>
     </footer>
 </body>
 

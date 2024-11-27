@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #F4E8D3;
 }
@@ -25,14 +30,38 @@ p {
 }
 
 a {
-    color: #F4E8D3;
-    background-color: #D87F58;
-    border-radius: 10px;
-    font: 11px "Nunito";
+    text-decoration: none;
 }
 
-footer,
+.menyKnappar {
+    color: #F4E8D3;
+    background-color: #D87F58;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    border-radius: 2px;
+    font: 11px "Nunito";
+    text-decoration: none;
+}
+
+.ikoner-SocialaMedier {
+    width: 20px;
+}
+
+.nav-Meny {
+    
+}
+
 header {
-    background-color: #6E521E;
-    margin: 20px;
+    background-color: #6e521e7e;
+    width: 100%;
+    position:sticky;
+}
+
+footer{
+    background-color: #6e521e7e;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
