@@ -4,10 +4,13 @@ body {
 
 h1 {
     color: #6E521E;
+    font: "EB Garamond";
 }
 
 h2 {
     color: #6E521E;
+    font: 16px "EB Garamond";
+    font-weight: bold;
 }
 
 h3 {
@@ -16,8 +19,18 @@ h3 {
 
 p {
     color: #6E521E;
+    font: 11px "Nunito";
+    font-weight: lighter;
 }
 
 a {
     color: #F4E8D3;
+    background-color:#D87F58;
+    border-radius: 10px;
+    font: 11px "Nunito";
+    font-weight: lighter;
+}
+
+footer, header{
+    background-color: #6E521E;
 }
