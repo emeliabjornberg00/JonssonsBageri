@@ -1,3 +1,23 @@
-p{
-    color: #725113;
+body {
+    background-color: #F4E8D3;
+}
+
+h1 {
+    color: #6E521E;
+}
+
+h2 {
+    color: #6E521E;
+}
+
+h3 {
+    color: #6E521E;
+}
+
+p {
+    color: #6E521E;
+}
+
+a {
+    color: #F4E8D3;
 }
