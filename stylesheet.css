@@ -26,12 +26,13 @@ p {
 
 a {
     color: #F4E8D3;
-    background-color:#D87F58;
+    background-color: #D87F58;
     border-radius: 10px;
     font: 11px "Nunito";
 }
 
-footer, header{
+footer,
+header {
     background-color: #6E521E;
-    margin:20px;
+    margin: 20px;
 }
