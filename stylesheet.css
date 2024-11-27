@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    color: #6E521E;
+    color: #F4E8D3;
     font: "EB Garamond";
 }
 
@@ -15,6 +15,7 @@ h2 {
 
 h3 {
     color: #6E521E;
+    font: 13px "EB Garamond";
 }
 
 p {
@@ -28,9 +29,9 @@ a {
     background-color:#D87F58;
     border-radius: 10px;
     font: 11px "Nunito";
-    font-weight: lighter;
 }
 
 footer, header{
     background-color: #6E521E;
+    margin:20px;
 }
