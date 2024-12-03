@@ -8,8 +8,12 @@ body {
 }
 
 h1 {
+    display: flex;
+    padding-top: 84px;
     color: #F4E8D3;
     font: 2rem "EB Garamond";
+    align-items: center;
+    justify-content: center;
 }
 
 h2 {
@@ -51,16 +55,34 @@ a {
 }
 
 main{
-    grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
     column-gap: 10px;
+    row-gap: 10px;
 }
 
-main section{
-    
+section{
+    display: grid;
+    grid-column: 2 / 8;
+    grid-row: auto;
+    padding-top: 50px;
 }
 
 .nav-Meny {
-    
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color:#6e521e7e;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    position: sticky;
+    top: 0;
 }
 
 header {
