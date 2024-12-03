@@ -9,24 +9,25 @@ body {
 
 h1 {
     color: #F4E8D3;
-    font: "EB Garamond";
+    font: 2rem "EB Garamond";
 }
 
 h2 {
     color: #6E521E;
-    font: 16px "EB Garamond";
+    font: 22px "EB Garamond";
     font-weight: bold;
 }
 
 h3 {
     color: #6E521E;
-    font: 13px "EB Garamond";
+    font: 18px "EB Garamond";
+    font-weight: bold;
 }
 
 p {
-    color: #6E521E;
-    font: 11px "Nunito";
-    font-weight: lighter;
+    color: #000;
+    font: 16px "Nunito";
+    font-weight: light;
 }
 
 a {
@@ -49,12 +50,24 @@ a {
     width: 20px;
 }
 
+main{
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+}
+
+main section{
+    
+}
+
 .nav-Meny {
     
 }
 
 header {
-    background-color: #6e521e7e;
+    background: url(images/ugn.jpg);
+    background-size: cover;
+    height: 200px;
+    background-color:#6e521e7e;
     width: 100%;
     position:sticky;
 }
@@ -62,6 +75,6 @@ header {
 footer{
     background-color: #6e521e7e;
     width: 100%;
-    position: absolute;
     bottom: 0;
+    z-index: 1;
 }
