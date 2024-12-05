@@ -69,6 +69,10 @@ section{
     padding-top: 50px;
 }
 
+main img{
+    width: 200px;
+}
+
 .nav-Meny {
     display: flex;
     position: sticky;
@@ -79,33 +83,43 @@ section{
     align-items: center;
 }
 
-.logotyp{
+header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5%;
-    
 }
 
-.logotyp h2{
+header h2{
     font-family: "EB garamond";
     color: #F4E8D3;
     font-style: italic;
 }
 
 header {
-    background: url(images/ugn.jpg);
-    background-size: cover;
     height: 200px;
-    background-color:#b48633;
     width: 100%;
     position:sticky;
 }
 
-footer{
-    background-color: #b48633;
+header::before {
+    content: ""; /* Skapar ett pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    bottom: 0;
-    z-index: 1;
+    height: 100%;
+    background: url(images/ugn.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(70%) brightness(50%);
+    z-index: -1;
+}
+
+footer {
+    background-color: #b48633;
+    text-align: center;
+    padding: 5px;
+    color: white;
 }
