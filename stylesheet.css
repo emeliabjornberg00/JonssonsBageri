@@ -29,13 +29,14 @@ h3{
 }
 
 p{
-    color: #000;
+    color: #000000;
     font: 16px "Nunito";
     font-weight: light;
 }
 
 a{
     text-decoration: none;
+    color: #000000;
 }
 
 .menyKnappar {
@@ -64,20 +65,27 @@ main{
 
 section{
     display: grid;
-    grid-column: 2 / 8;
+    grid-column: 3 / 7;
     grid-row: auto;
     padding-top: 50px;
 }
 
-main img{
-    width: 200px;
+.contact{
+    display: grid;
+    grid-column: 4/7;
+    gap: 1rem;
+}
+
+.contact img{
+    margin-right: 5%;
+    vertical-align: middle;
 }
 
 .nav-Meny {
     display: flex;
     position: sticky;
     top: 0;
-    background-color:#b48633;
+    background-color:#b19d78;
     height: 50px;
     justify-content: center;
     align-items: center;
@@ -118,8 +126,6 @@ header::before {
 }
 
 footer {
-    background-color: #b48633;
+    background-color: #b19d78;
     text-align: center;
-    padding: 5px;
-    color: white;
 }
