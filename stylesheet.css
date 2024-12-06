@@ -3,8 +3,21 @@
     padding: 0;
 }
 
+html, body{
+    height: 100%;
+}
+
 body{
     background-color: #F4E8D3;
+    height: 100%;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(25vh);
+    gap: 10rem;
 }
 
 h1{
@@ -18,13 +31,13 @@ h1{
 
 h2{
     color: #6E521E;
-    font: 22px "EB Garamond";
+    font: 16pt "EB Garamond";
     font-weight: bold;
 }
 
 h3{
     color: #6E521E;
-    font: 18px "EB Garamond";
+    font: 14pt "EB Garamond";
     font-weight: bold;
 }
 
@@ -39,28 +52,37 @@ a{
     color: #000000;
 }
 
+.nav-Meny {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color:#b19d78;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
 .menyKnappar {
-    color: #F4E8D3;
+    color: #ffffff;
     background-color: #D87F58;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     text-align: center;
     align-content: center;
     border-radius: 2px;
-    font: 16px "Nunito";
+    font: 11pt "Nunito";
     text-decoration: none;
+    box-shadow: 2px 2px 5px #0000005d;
+    transition: all 0.1s;
 }
 
-.ikoner-SocialaMedier {
+.menyKnappar:hover{
+    transform: scale(115%);
+    background-color: #d46535;
+}
+
+.ikoner-SocialaMedier{
     width: 20px;
-}
-
-main{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto;
-    column-gap: 10px;
-    row-gap: 10px;
 }
 
 section{
@@ -68,6 +90,51 @@ section{
     grid-column: 3 / 7;
     grid-row: auto;
     padding-top: 50px;
+}
+
+#jmf{
+    display: grid;
+    grid-column: 2;
+    grid-row: auto;
+    width: 25vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#personal{
+    display: grid;
+    grid-column: 3;
+    grid-row: auto;
+    width: 25vw;
+    height: 25vh;
+    object-fit: cover;
+}
+
+#bulle{
+    display: grid;
+    grid-column: 3;
+    grid-row: auto;
+    width: 25vw;
+    height: 25vh;
+    object-fit: cover;
+}
+
+#brodpase{
+    display: grid;
+    grid-column: 3;
+    grid-row: auto;
+    width: 25vw;
+    height: 25vh;
+    object-fit: cover;
+}
+
+#mbrod{
+    display: grid;
+    grid-column: 2;
+    grid-row: auto;
+    width: 25vw;
+    height: 25vh;
+    object-fit: cover;
 }
 
 .contact{
@@ -79,16 +146,6 @@ section{
 .contact img{
     margin-right: 5%;
     vertical-align: middle;
-}
-
-.nav-Meny {
-    display: flex;
-    position: sticky;
-    top: 0;
-    background-color:#b19d78;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
 }
 
 header{
@@ -112,7 +169,7 @@ header {
 }
 
 header::before {
-    content: ""; /* Skapar ett pseudo-element */
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -126,6 +183,9 @@ header::before {
 }
 
 footer {
+    display: flex;
     background-color: #b19d78;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100%;
 }
