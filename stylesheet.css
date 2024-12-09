@@ -16,7 +16,7 @@ body{
 main{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(25vh);
+    grid-template-rows: auto;
     gap: 10rem;
 }
 
@@ -43,7 +43,7 @@ h3{
 
 p{
     color: #000000;
-    font: 16px "Nunito";
+    font: 13pt "Nunito";
     font-weight: light;
 }
 
@@ -64,7 +64,7 @@ a{
 
 .menyKnappar {
     color: #ffffff;
-    background-color: #D87F58;
+    background-color: #d46535;
     margin: 20px;
     padding: 10px;
     text-align: center;
@@ -78,7 +78,7 @@ a{
 
 .menyKnappar:hover{
     transform: scale(115%);
-    background-color: #d46535;
+    background-color: #b45126;
 }
 
 .ikoner-SocialaMedier{
@@ -140,7 +140,9 @@ section{
 .contact{
     display: grid;
     grid-column: 4/7;
+    grid-row: auto;
     gap: 1rem;
+    height: 1rem;
 }
 
 .contact img{
@@ -148,24 +150,81 @@ section{
     vertical-align: middle;
 }
 
+legend {
+    font-family:"EB Garamond";
+    font-size: 16pt;
+    font-weight: bold;
+    color: #6E521E;
+}
+
+.meddelanderubrik{
+    font-family:"EB Garamond";
+    font-size: 16pt;
+    font-weight: bold;
+    color: #6E521E;
+}
+
+.meddelanderubrik + textarea{
+    margin-top: 1rem;
+}
+
+fieldset {
+    border-style: none;
+    padding: 1rem;
+}
+
+label{
+    font-family: "Nunito";
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-style: none;
+    font-family: 13pt "nunito";
+    font-size: 11pt;
+    box-sizing: border-box;
+    background-color: #ffffffa2;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button{
+    font-family: "Nunito";
+    font-size: 13pt;
+    color: #ffffff;
+    border-style: none;
+    padding: 0.6rem;
+    background-color: #f06e37;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 5px #0000008a;
+    float: right;
+    margin-right: 1rem;
+}
+
+
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5%;
+    height: 200px;
+    width: 100%;
+    position:sticky;
 }
 
 header h2{
     font-family: "EB garamond";
     color: #F4E8D3;
     font-style: italic;
-}
-
-header {
-    height: 200px;
-    width: 100%;
-    position:sticky;
 }
 
 header::before {
