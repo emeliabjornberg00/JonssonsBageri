@@ -1,10 +1,12 @@
+<!--dokumenttyp och språk-->
 <!DOCTYPE html>
 <html lang="sv" xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
+    <!--anger standardsymboler och bredd relativ till enhet-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vårt Sortiment</title>
+    <!--titel, länk till CSS och länk till användatypsnitt-->
+    <title>Bageri Jönsson</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,20 +16,19 @@
 </head>
 
 <body>
+    <!--sidans rubrik-->
     <header>
         <h1>Vårt sortiment</h1>    
     </header>
-
-        
-
+        <!--navigationsmeny-->
         <nav class="nav-Meny">
             <a href="index.html" class="menyKnappar">Hem</a>
             <a href="kontakt.html" class="menyKnappar">Kontakt</a>
             <a href="sortiment.html" class="menyKnappar">Sortiment</a>
         </nav>
-        
+    <!--separat grid för sidan-->
     <main class="sortiment-grid">
-
+        <!--separat klass så sections på andra sidor påverkas av CSS-->
         <section class="sortiment-layout">
             <h2>Beställ dina bakverk online!</h2>
 
@@ -39,10 +40,10 @@
             <p>Perfekt för helgen, festen eller en god fika!</p>
 
             <p>Gör din beställning redan idag och njut av vårt hållbara hantverk.</p>
-
+            <!--beställningsformulär-->
             <p>Beställ här!</p>
-            
-            <form action="insert_php_script_here.php" method="post">
+            <!--beställningsformulär-->
+            <form action="#" method="post" class="order-form">
                 <fieldset>
                     <legend>Personuppgifter</legend>
     
@@ -63,7 +64,11 @@
                     <button type="submit" class="button">Skicka</button>
                 </fieldset>
             </form>
-            
+            <!--"tack"-meddelande som place holder till kommande php-script appliceras-->
+            <div class="thank-you-message" aria-hidden="true">
+                <p>Tack för din beställning! Vi kommer att kontakta dig inom kort.</p>
+            </div>
+        <!--sortiment nedan-->
         </section>
         <img src="images/brodhylla.jpg" alt="Bild på olika bröd i en hylla" id="brodhylla">
         <section class="sortiment-layout">
@@ -105,7 +110,7 @@
         </section>
         <img src="images/kakor.jpg" alt="En bild på småkakor i en disk" id="kakor">
     </main>
-
+    <!--footer för generella kontaktvägar och sociala medier-->
     <footer>
         <nav class="nav-Meny">
             <a href="https://www.google.se/maps/search/Storgatan+12,+123+45+Sago+Sund/@59.2784237,15.2144927,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank"><img src="images/plats.png" width="50" alt="Plats"></a>

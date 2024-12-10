@@ -1,9 +1,11 @@
+<!--dokumenttyp och språk-->
 <!DOCTYPE html>
 <html lang="sv" xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
+    <!--anger standardsymboler och bredd relativ till enhet-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--titel, länk till CSS och länk till användatypsnitt-->
     <title>Bageri Jönsson</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,19 +16,21 @@
 </head>
 
 <body>
+    <!--header med logotyp och slogan-->
     <header>
         <img src="images/logo-crop.svg" width="150" alt="logotyp">
         <h2>Lokalt hantverk, nybakat varje dag</h2>   
     </header>
 
-       
+       <!--navigationsmeny-->
         <nav class="nav-Meny">
             <a href="index.html" class="menyKnappar">Hem</a>
             <a href="kontakt.html" class="menyKnappar">Kontakt</a>
             <a href="sortiment.html" class="menyKnappar">Sortiment</a>
         </nav>
-
+    <!--klass för main-grid i CSS-->
     <main class="main-grid">
+        <!--uppdelat i sektioner för olika ämnen för enklare navigering-->
         <section>
             <h2>Om oss</h2>
 
@@ -58,7 +62,7 @@
                 samma anda som när vi började, men med en ständig strävan efter att förbättra oss och möta framtidens
                 krav på hållbarhet och innovation.</p>
         </section>
-
+        <!--div som container för bilder då layouten enklast justeras med ett separat grid från main-->
         <div class="bilder">
             <img src="images/brodbulle.jpg" alt="En bild på en brödbulle."
             id="bulle">
@@ -72,10 +76,9 @@
             id="brodpase">
         </div>
 
-        
-
     </main>
     
+    <!--footer för generella kontaktvägar och sociala medier-->
     <footer>
         <nav class="nav-Meny">
             <a href="https://www.google.se/maps/search/Storgatan+12,+123+45+Sago+Sund/@59.2784237,15.2144927,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank"><img src="images/plats.png" width="50" alt="Plats"></a>

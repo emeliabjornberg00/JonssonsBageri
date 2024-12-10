@@ -232,6 +232,28 @@ button:hover{
     transform: scale(1.15);
     background-color: #853817;
 }
+/*effekt för att visa "skickat"-meddelande*/
+.order-form {
+    transition: opacity 0.3s ease-in-out;
+}
+/*döljer place "skickat"-meddelande*/
+.thank-you-message {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    background: #eaf7ea;
+    border: 1px solid #a4d4a4;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+}
+/*visar "tack"-meddelande*/
+.order-form:focus-within + .thank-you-message {
+    display: block;
+    opacity: 1;
+}
 
 /*header placering och stilsättning*/
 
