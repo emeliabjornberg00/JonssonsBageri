@@ -11,11 +11,11 @@ body {
 }
 
 
-/*grid för sidorna*/
+/*nedan är grid för de olika sidorna*/
 .main-grid{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-auto-rows: min-content; /* Ensure grid rows grow only as needed */
+    grid-auto-rows: min-content; /*säkerställer att det inte blir extra rader*/
     gap: 1rem;
 }
 
@@ -37,9 +37,9 @@ body {
 
 h1{
     display: flex;
-    padding-top: 84px;
+    padding-top: 5rem;/*placering så man ser ugnen i hero image*/
     color: #F4E8D3;
-    font: 3rem "EB Garamond";
+    font: 35pt "EB Garamond";
     align-items: center;
     justify-content: center;
 }
@@ -62,11 +62,11 @@ p{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none; /*tar bort stilsättning av länkar*/
     color: #000000;
 }
 
-/*layout index*/
+/*layout för index*/
 
 section{
     display: grid;
@@ -75,7 +75,7 @@ section{
     padding-top: 50px;
 }
 
-/*grid för bilder*/
+/*grid för bilder i index*/
 .bilder{
     display: grid;
     grid-column: 3 / 7;
@@ -84,7 +84,7 @@ section{
     gap: 1rem;
 }
 
-/*layout bilder index*/
+/*layout bilder i grid*/
 #jmf{
     grid-column: 1;
     grid-row: 1/3;
@@ -246,12 +246,14 @@ header{
     position:sticky;
 }
 
+ /*stilsättning slogan*/
 header h2{
     font-family: "EB garamond";
     color: #F4E8D3;
     font-style: italic;
 }
 
+/*navigationsmeny stilsättning*/
 .nav-Meny {
     display: flex;
     position: sticky;
@@ -262,6 +264,7 @@ header h2{
     align-items: center;
 }
 
+/*stilsättning knappar i navigationsmeny*/
 .menyKnappar {
     color: #ffffff;
     background-color: #ac6242;
@@ -276,13 +279,13 @@ header h2{
     transition: all 0.1s;
 }
 
+/*hovereffekt för knappar*/
 .menyKnappar:hover{
     transform: scale(1.15);
     background-color: rgb(156, 66, 27);
 }
 
 /*hero image*/
-
 header::before {
     content: "";/*skapar pseudoelement*/
     position: absolute;
@@ -294,19 +297,19 @@ header::before {
     background-size: cover;
     background-position: center;
     filter: grayscale(70%) brightness(50%);
-    z-index: -1;
+    z-index: -1;/*lägger elementet bakom övriga element*/
 }
 
 /*footer placering och stilsättning*/
 
 footer {
-    margin-top: auto; /* Push the footer to the bottom */
-    display: flex; /* Align footer content */
-    justify-content: center; /* Center footer content horizontally */
-    align-items: center; /* Center footer content vertically */
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #b19d78;
-    width: 100%; /* Ensure footer spans the full width */
-    box-sizing: border-box; /* Include padding in height calculation */
+    width: 100%;
+    box-sizing: border-box;
   }
 
 .footer-nav {
