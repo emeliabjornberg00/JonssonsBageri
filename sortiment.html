@@ -61,13 +61,16 @@
                     <label class="meddelanderubrik" for="message">Meddelande</label>
                     <textarea id="message" name="message" required></textarea>
     
-                    <button type="submit" class="button">Skicka</button>
-                </fieldset>
-            </form>
-            <!--"tack"-meddelande som place holder till kommande php-script appliceras-->
+                    <!--dold checkbox som place holder för kommande knapp till php-script-->
+                    <input type="checkbox" id="show-thank-you" class="hidden-checkbox">
+                <label for="show-thank-you" class="button">Skicka</label>
+                
+                <!--"tack"-meddelande som place holder till kommande php-script appliceras-->
             <div class="thank-you-message" aria-hidden="true">
                 <p>Tack för din beställning! Vi kommer att kontakta dig inom kort.</p>
             </div>
+                </fieldset>
+            </form>
         <!--sortiment nedan-->
         </section>
         <img src="images/brodhylla.jpg" alt="Bild på olika bröd i en hylla" id="brodhylla">

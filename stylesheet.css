@@ -214,7 +214,7 @@ textarea {
 
 /*knapp stilsättning*/
 
-button{
+.button{
     font-family: "Nunito";
     font-size: 13pt;
     color: #ffffff;
@@ -228,15 +228,27 @@ button{
     transition: all 0.1s;
 }
 
-button:hover{
+.button:hover{
     transform: scale(1.15);
     background-color: #853817;
 }
-/*effekt för att visa "skickat"-meddelande*/
-.order-form {
-    transition: opacity 0.3s ease-in-out;
+
+.hidden-checkbox:checked ~ .thank-you-message {
+    display: block;
+    opacity: 1;
 }
-/*döljer place "skickat"-meddelande*/
+
+/*döljer checkbox*/
+.hidden-checkbox {
+    display: none;
+}
+
+/*visar checkbox*/
+.hidden-checkbox:checked ~ .thank-you-message {
+    display: block;
+    opacity: 1;
+}
+
 .thank-you-message {
     display: none;
     opacity: 0;
@@ -248,11 +260,6 @@ button:hover{
     margin-top: 20px;
     border-radius: 8px;
     font-family: 'Nunito', sans-serif;
-}
-/*visar "tack"-meddelande*/
-.order-form:focus-within + .thank-you-message {
-    display: block;
-    opacity: 1;
 }
 
 /*header placering och stilsättning*/
