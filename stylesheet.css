@@ -22,13 +22,11 @@ body {
 .contact-grid{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 10rem;
 }
 
 .sortiment-grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 2rem;
+    grid-template-columns: repeat(8, 1fr);
     width: 100%;
     margin: 0 auto;
 }
@@ -37,7 +35,6 @@ body {
 
 h1{
     display: flex;
-    padding-top: 5rem;/*placering så man ser ugnen i hero image*/
     color: #F4E8D3;
     font: 35pt "EB Garamond";
     align-items: center;
@@ -48,12 +45,15 @@ h2{
     color: #6E521E;
     font: 16pt "EB Garamond";
     font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 h3{
     color: #6E521E;
     font: 14pt "EB Garamond";
     font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 p{
@@ -80,7 +80,8 @@ section{
     display: grid;
     grid-column: 3 / 7;
     grid-row: auto;
-    padding-top: 50px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     gap: 1rem;
 }
 
@@ -133,7 +134,7 @@ section{
 /*layout sortimentsidan*/
 .sortiment-layout{
     display: grid;
-    grid-column: 4 / 10;
+    grid-column: 3 / 7;
     grid-row: auto;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -153,7 +154,7 @@ section{
 
 .contact{
     display: grid;
-    grid-column: 4/7;
+    grid-column: 3/8;
     grid-row: auto;
     gap: 2rem;
     margin-bottom: 3rem;
@@ -228,6 +229,17 @@ textarea {
     transition: all 0.1s;
 }
 
+/*mellanrum mellan brödtext och rubrik*/
+.rubrik-order{
+padding-bottom: 1rem;
+}
+
+/*mellanrum mellan brödtext och rubrik*/
+.order-form{
+    padding-top: 2rem;
+}
+
+/*animation "skicka"-knapp*/
 .button:hover{
     transform: scale(1.15);
     background-color: #853817;
@@ -318,7 +330,8 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(images/ugn.jpg);
+    background: url(images/ugn.jpg); /* Hansbenn (2016)
+    https://pixabay.com/sv/photos/k%C3%B6k-historisk-%C3%B6ppen-spis-skorsten-1566964/*/
     background-size: cover;
     background-position: center;
     filter: grayscale(70%) brightness(50%);
