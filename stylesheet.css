@@ -219,7 +219,7 @@ textarea {
     font-size: 13pt;
     color: #ffffff;
     border-style: none;
-    padding: 0.6rem;
+    padding: 0.5rem;
     background-color: #ac5742;
     border-radius: 0.2rem;
     box-shadow: 2px 2px 5px #0000008a;
@@ -233,37 +233,33 @@ textarea {
     background-color: #853817;
 }
 
-.hidden-checkbox:checked ~ .thank-you-message {
-    display: block;
-    opacity: 1;
-}
-
-/*döljer checkbox*/
+/*nedan är "tack"-meddelande för att bekräfta att beställning är skickad*/
+/*döljer checkbox */
 .hidden-checkbox {
     display: none;
 }
 
-/*visar checkbox*/
+/*visar "tack"-meddelandet */
 .hidden-checkbox:checked ~ .thank-you-message {
-    display: block;
+    visibility: visible;
     opacity: 1;
 }
 
+/*animation och stilsättning för "tack"-meddelande*/
 .thank-you-message {
-    display: none;
+    visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in; /*animation*/
     text-align: center;
     background: #eaf7ea;
     border: 1px solid #a4d4a4;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 45px; /*så inte skickaknappen täcker meddelandet*/
     border-radius: 8px;
     font-family: 'Nunito', sans-serif;
 }
 
 /*header placering och stilsättning*/
-
 header{
     display: flex;
     flex-direction: column;
